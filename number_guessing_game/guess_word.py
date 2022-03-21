@@ -3,8 +3,8 @@ import random
 # I used underscore for variables and functions to indicate they are private
 
 _WORD_LIST = [
-    "python", "c", "java", "swift", "html", "css", "go", "ruby",
-    "javascript"]
+    "python", "c", "java", "swift", "html", "css", "go", "ruby", "javascript"
+]
 
 _max_failed_attempts = 9
 

@@ -1,5 +1,5 @@
 def mean(num_list):
-    """Accept a non-emppty  list of numbers. 
+    """Accept a non-empty  list of numbers. 
     Return the average of those numbers"""
     try:
         return sum(num_list)/len(num_list)

@@ -1,3 +1,5 @@
+import sys
+
 
 def word_per_line(filename):
     """Given a text file, return a sentence from the nth
@@ -20,3 +22,7 @@ word for line n, for each of the first 10 lines.
             output.append(words[n])
 
     return ' '.join(output)
+
+
+filename = sys.argv[1]
+print(word_per_line(filename))

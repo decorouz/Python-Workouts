@@ -1,8 +1,11 @@
+import string
+
+
 def ubbu_dubbi(word):
-    """Returns a string, the words translation into `Ubbi Dubbi`
-        Returns:
-            if the function is called with `octopus`,
-            the function will return the string `uboctubopubus`
+    """Ask the user to enter a word,
+and return the word's translation into Ubbi Dubbi.
+If the input word is capitalized, then the output
+word should be, too.
     """
 
     output = []
@@ -19,3 +22,19 @@ def ubbu_dubbi(word):
 
 
 print(ubbu_dubbi("octopus"))
+
+
+# An even better solution
+
+def ubbi_dubbi(word):
+    output = []
+
+    for letter in word:
+        if letter in "aeiou":
+            output.append(f"ub{letter}")
+        else:
+            output.append(letter)
+    if word[0] in string.ascii_uppercase:
+        output[0] = output[0].capitalized()
+
+    return "".join(output)

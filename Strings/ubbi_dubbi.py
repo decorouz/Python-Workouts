@@ -7,8 +7,15 @@ def ubbu_dubbi(word):
 
     output = []
     for letter in word:
-        if letter in "aeiou":
-            output.append(f"u{letter}")
+        if letter.isupper():
+            if letter in "aeiou".upper():
+                output.append(f"Ub{letter.lower()}")
+
+        elif letter in "aeiou":
+            output.append(f"ub{letter}")
         else:
             output.append(letter)
     return "".join(output)
+
+
+print(ubbu_dubbi("octopus"))

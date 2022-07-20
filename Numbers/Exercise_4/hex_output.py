@@ -1,3 +1,6 @@
+import pytest
+
+
 def hex_output():
     """Takes a hex number and returns the decimal equivalent"""
     decnum = 0

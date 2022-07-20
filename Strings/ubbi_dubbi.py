@@ -25,7 +25,6 @@ print(ubbu_dubbi("octopus"))
 
 
 # An even better solution
-
 def ubbi_dubbi(word):
     output = []
 

@@ -37,8 +37,7 @@ def guessing_game():
         if correct_attempt:
             attempts -= 1
 
-    print(
-        f" Sorry you lost! The target number is {target_number}")
+    print(f" Sorry you lost! The target number is {target_number}")
 
 
 guessing_game()

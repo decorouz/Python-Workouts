@@ -21,12 +21,10 @@ def timethis(func):
 
 
 # Example
-
+@timethis
 def countdown(n):
     while n > 0:
         n -= 1
 
 
-
-countdown = timethis(countdown)
 countdown(1000)
